@@ -104,7 +104,6 @@ nav.stroke ul li a:hover:after {
 
 .navbar-fixed-top.scrolled {
   background-color: #fff !important;
-
   height: 120px;
   padding-bottom: 0px;
   border-bottom: 0.5px grey solid;
@@ -411,7 +410,10 @@ nav.scrolled {
             transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
 }
-
+.fa-angle-right {
+  position: relative;
+  z-index: -111;
+}
 #tour-background {
   background-image: url(../img/lightpaperfibers.png);
   background-repeat: repeat;
@@ -861,7 +863,7 @@ color: #ffcc00;
 
 .album-button {
   text-align: center;
-  width: 25%;
+  width: 35%;
   height: 40px;
   padding: 10px;
   background-color: #ffcc00;

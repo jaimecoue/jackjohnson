@@ -1,0 +1,259 @@
+
+/* ---------------------------- MEDIA QUERIES ------------------- */
+@media screen and (max-width: 2000px) {
+ 
+  .responsivenav {
+    display: none;
+  }
+
+  .no-desktop-display {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+ 
+  .responsivenav {
+    display: none;
+  }
+
+  .no-desktop-display {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 1140px) {
+#jackjohnsonguitar {
+height: 300px;
+border: 0 !important;
+transform: translateY(120px);
+outline: 0;
+position: absolute;
+z-index: -111;
+border-style: none;
+display: block;
+background-repeat: no-repeat;
+}
+
+
+}
+
+@media screen and (max-width: 900px) {
+nav ul {
+  list-style: none;
+  text-align: center;
+
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+
+  display: block;
+  padding: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+}
+.tablet-heading {
+    font-family: 'Leckerli One';
+    font-size: 1em;
+    padding-top: 5%;
+  }
+  .display-tablet {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+  .mobilebooknow1, .mobilebooknow2, .mobilebooknow3, .mobilebooknow4, .mobilebooknow5, .mobilebooknow6 {
+    text-align: center;
+ 
+}
+
+.no-tablet-display {
+  display: none;
+}
+.padding-tablet {
+  padding-bottom: 10%;
+}
+.logodark {
+  height: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.display-tablet-menu {
+  display: initial;
+}
+   .tablet-heading {
+    font-family: 'Leckerli One';
+    font-size: 1em;
+    padding-top: 5%;
+  }
+  .display-tablet {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+  .display-tablet-gallery {
+    display: initial;
+  }
+
+  .mobilebooknow1, .mobilebooknow2, .mobilebooknow3, .mobilebooknow4, .mobilebooknow5, .mobilebooknow6 {
+    text-align: center;
+ 
+}
+
+.display-mobile-gallery {
+  display: initial;
+}
+
+.no-tablet-display {
+  display: none;
+}
+.padding-tablet {
+  padding-bottom: 10%;
+}
+
+.cta {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.cta h2 {
+  font-family: 'Leckerli One', cursive;
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  padding: 0;
+  
+}
+
+.cta-button {
+  width: 40%;
+  height: 40px;
+  padding: 10px;
+  background-color: #ffcc00;
+
+}
+ 
+  }
+
+@media screen and (max-width: 600px) {
+
+  .footer-basic-centered{
+    padding: 35px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .responsivenav {
+    display: inline;
+  }
+
+  .display-mobile-menu{
+    display: initial;
+  }
+  .no-mobile-display {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .display-mobile-gallery {
+    display: initial;
+  }
+
+.display-mobile-menu{
+    display: initial;
+  }
+.cta-image {
+  height: 350px;
+  width: 100%;
+  background-image: url(../img/merch.png);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  text-align: center;
+  padding:5%;
+  padding-top: 50px;
+
+}
+
+.cta {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cta h2 {
+  font-family: 'Leckerli One', cursive;
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  padding: 0;
+  
+}
+
+.cta-button {
+  width: 35%;
+  height: 40px;
+  padding: 10px;
+  background-color: #ffcc00;
+
+}
+
+.cta-button a {
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+}
+
+.cta-button:hover,.cta-button a:hover {
+  background-color: #FFDA47;
+  color: #000;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+}
+
+  .display-mobile{
+    display: grid;
+  }
+
+.display-mobile-menu{
+    display: initial;
+  }
+
+  .container {
+    background-image: url(../img/landing-image-mobile.png);
+  }
+
+  .mobile-heading {
+    font-family: 'Leckerli One';
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .display-mobile h1 {
+    font-size: 1em;
+  }
+
+  .no-mobile-display {
+    display: none;
+  }
+  
+}

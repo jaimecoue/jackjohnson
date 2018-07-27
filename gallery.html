@@ -11,6 +11,7 @@
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   	<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
   	 <link rel="stylesheet" href="css/animate.css">
+  	 <link rel="stylesheet" href="css/mq.css">
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="/path/to/parallax.js"></script>
@@ -38,19 +39,31 @@
 	</div>
 </div>
 
+
+
+<!-- RESPONSIVE NAV -->
+<header class="header no-desktop-display display-mobile-menu">
+  <a href="/" class="logo"><img class="logo-mobile" src="img/logo-black.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="tour.html">TOUR</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="holding-page.html">STORE</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+</header>
+
      <!-- START NAV --> 
 
-  <nav class="topnav nav white stroke navbar-fixed-top" id="myTopnav">
-
+    <nav class="nav stroke white navbar-fixed-top no-mobile-display display-tablet-menu" id="myTopnav">
     <ul>
       <li><a href="tour.html">TOUR</a></li>
       <li><a href="gallery.html">GALLERY</a></li>
-      <a href="#"><img class="logodark" src="img/logo-black.png"></a>
+      <a href="index.html"><img class="logodark" src="img/logo-black.png"></a>
       <li><a href="holding-page.html">STORE</a></li>
       <li><a href="contact.html">CONTACT</a></li>
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i></a>
     </ul>
   </nav>
 
@@ -60,8 +73,8 @@
 
 
 <!-- VIDEOS -->
-<div class="gallery-container">
-<div class="first-video-grid">
+<div class="gallery-container no-mobile-display">
+<div class="first-video-grid no-tablet-display">
 		<div class="grid-left">
 			<h1><span class="galleryheading fade-in-element">Gallery</span><br><span class="musicvideoheading fade-in-element">Music Videos</span></h1>
 
@@ -77,19 +90,46 @@
 		</div>
 </div>
 
-<div class="second-video-grid">
+<div class="second-video-grid no-tablet-display">
 	<div class="first-video"><iframe class="first-video" src="https://www.youtube.com/embed/Q3REipDpxNQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 	<div class="second-video"><iframe align="center" class="second-video" src="https://www.youtube.com/embed/dBWFUVq85gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 	<div class="third-video"><iframe align="right" class="third-video" src="https://www.youtube.com/embed/cCyQJm1E3M0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>		
 </div>
 </div>
 
+
+<!-- TABLET VIDEO -->
+<section class="gallery-container">
+<div class="tablet-gallery no-mobile-display display-tablet-gallery no-desktop-display">
+<br><br><br><br><br>
+<h1><span class="mobile-heading tablet-heading display-tablet display-mobile no-desktop-display fade-in-element">Gallery</span></h1>
+
+<div class="tablet-gallery-wrapper">
+<span class="songheading"><h2>"You Can't Control It"</h2></span>
+		<center><span class="songcontent">You Can’t Control It (Official Audio) Song taken from the new album "All The Light Above It Too".
+		<br><br> Available for pre-order below.</span><br><br><br></center>
+		<center><div class="album-button-tablet  fade-in-element"><a href="holding-page.html">Buy Now</a></div></center><br><br>
+
+<iframe class="video-tablet"  src="https://www.youtube.com/embed/lv1mhhvOyII" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe class="video-tablet"  src="https://www.youtube.com/embed/Q3REipDpxNQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe  class="video-tablet"  src="https://www.youtube.com/embed/dBWFUVq85gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe class="video-tablet" src="https://www.youtube.com/embed/cCyQJm1E3M0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+</div>
+</section>
+
+<!-- END TABLET -->
+
 <!-- PHOTOS -->
-<div class="gallery-container photo-row">
+<div class="gallery-container photo-row no-mobile-display">
 
 	<div class="first-photo-grid">
 		<div class="first-photo">
-		<div class="photo-left">
+		<div class="photo-left-content">
 		<span class="photo-date">19 July 2018</span><br><br>
 			<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span>
 		</span><br><br></div>
@@ -101,64 +141,84 @@
 	</div>
 
 
-	<div class="first-photo-grid">
-		<div class="first-photo">
-		<div class="photo-left">
+
+<div class="second-photo-grid">
+		<div class="second-photo">
+
+		<div class="hes-gallery" data-wrap="true" data-img-count="false">
+			   <img class="photo-left" src="img/photo2.jpg" alt="image1">
+		</div>
+		
+		<div class="photo-right-content">
 		<span class="photo-date">19 July 2018</span><br><br>
 			<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span>
 		</span><br><br></div>
+
+			 
+		</div>
+	</div>
+
+	<div class="third-photo-grid">
+		<div class="third-photo">
+		<div class="photo-left-content">
+		<span class="photo-date">19 July 2018</span><br><br>
+			<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span>
+		</span><br><br></div>
+
 			 <div class="hes-gallery" data-wrap="true" data-img-count="false">
 			   <img class="photo-right" src="img/photo3.jpg" alt="image1">
 		</div>
 		</div>
-	</div>
-
-	</div>
-
-
-
-<!--
-<div class="gallery-container photo-row">
-<div class="first-photo-grid">
-		<div class="photo-left grid-left">
-
-		<span class="photo-left-content">
-			<span class="photo-date">19 July 2018</span><br><br>
-			<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span>
-		</span><br><br>
+			<section class="view-more gallery-container">
 		
-		</div>
+		<span class="view-more-left"><a href="holding-page.html">2018</a></span>
+		<span class="view-more-left"><a href="holding-page.html">2017</a></span>
+		<span class="view-more-left"><a href="holding-page.html">2016</a></span>
+		<span class="view-more-left"><a href="holding-page.html">View More</a></span>
+			
 
-		<div class="grid-right">
-			 <div class="hes-gallery" data-wrap="true" data-img-count="false">
-			   <img class="photo-right" src="img/photo1.jpg" alt="image1">
+
+	</section>
+	</div>
+</div>
+
+<!-- RESPONSIVE GALLERY -->
+
+<div class="video-gallery display-mobile-gallery no-tablet-display no-desktop-display">
+	<br><br><br>
+<center><h1><span class="mobile-heading tablet-heading display-tablet display-mobile no-desktop-display fade-in-element">Gallery</span></h1></center>
+
+<div class="gallery-wrapper">
+<span class="songheading"><h2>"You Can't Control It"</h2></span>
+		<span class="songcontent">You Can’t Control It (Official Audio) Song taken from the new album "All The Light Above It Too".
+		<br><br> Available for pre-order below. </span><br><br><br>
+		<div class="album-button-mobile  fade-in-element"><a href="holding-page.html">Buy Now</a></div><br>
+
+<iframe class="video-mobile" src="https://www.youtube.com/embed/lv1mhhvOyII"frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe class="video-mobile" src="https://www.youtube.com/embed/Q3REipDpxNQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe  class="video-mobile" src="https://www.youtube.com/embed/dBWFUVq85gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe class="video-mobile" src="https://www.youtube.com/embed/cCyQJm1E3M0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<span class="songheading"><h2>Photos</h2></span>
+
+<img class="video-mobile" src="img/photo1.jpg" alt="image1">
+<center><span class="photo-content">19 July 2018</span><br>
+<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span></center>
+
+<img class="video-mobile" src="img/photo2.jpg" alt="image1">
+<center><span class="photo-content">19 July 2018</span><br>
+<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span></center>
+
+<img class="video-mobile" src="img/photo3.jpg" alt="image1">
+<center><span class="photo-content">19 July 2018</span><br>
+<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span></center>
 	
-			</div>
-		</div>
 
 </div>
-
-<div class="second-photo-grid">
-		<div class="photo-left grid-left">
-
-		<span class="photo-left-content">
-			<span class="photo-date">19 July 2018</span><br><br>
-			<span class="photo-content">Moon & Stars<br>Photo by Kizzy O'Neal</span>
-		</span><br><br>
-		
-		</div>
-
-		<div class="grid-right">
-			 <div class="hes-gallery" data-wrap="true" data-img-count="false">
-			   <img class="photo-right" src="img/photo1.jpg" alt="image1">
-	
-			</div>
-		</div>
-
 </div>
-
-</div>
-
 
 <!-- MERCH CTA -->
 
